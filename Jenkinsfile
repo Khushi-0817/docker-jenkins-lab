@@ -10,7 +10,8 @@ pipeline {
 
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/Khushi-0817/docker-jenkins-lab.git'
+                git branch: 'main',
+                url: 'https://github.com/Khushi-0817/docker-jenkins-lab.git'
             }
         }
 
